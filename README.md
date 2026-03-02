@@ -119,3 +119,15 @@ The proxy is computed by creating a text field for screening, flagging comments 
 |38|2022-11-08 00:00:00|12258|545|0\.044460760319791154|
 |39|2022-11-09 00:00:00|19804|726|0\.03665926075540295|
 |40|2022-11-10 00:00:00|10712|474|0\.04424943988050784|
+
+# Interpreting the Results (RQ3, Exploratory)
+The preliminary Reddit harm proxy shows measurable day-to-day variation in harm-flagged language rates during the election-week surge period. In the Nov 4–10 window, Reddit comment volume rises sharply (especially on 11-08-2022 and 11-09-2022), while the harm rate declines across the peak volume days in the current proxy outputs (e.g., from 0.0720 on 11-04-2022 to 0.0367 on 11-09-2022, with a small rebound on 11-10-2022).
+
+This pattern suggests that surge periods and harm-related signals may vary together, but not in a simple "more volume = higher harm rate" way. The relationship appears dynamic and potentially sensitive to the composition of the discussion during high-attention periods. Because the current indicator is a lightweight proxy, these results should be interpreted as exploratory evidence that motivates stronger follow-up measurement rather than as a basis for strong causal or diagnostic claims.
+
+Even in this preliminary form, the RQ3 analysis is useful because it links the temporal surge findings from Analysis 1 to a potential escalation dimension. It functions as a proof-of-concept showing that the project can move beyond volume and timing to examine whether peak attention windows also correspond with measurable changes in language conditions.
+
+# Figures and Tables Used in Analysis 2
+This section uses one figure and two tables for the supporting measurement comparison, and one figure and one table for the preliminary Reddit harm proxy. Figure 3 and the candidate-vs-keyword summary tables support the measurement interpretation by showing how the collection strategy changes the apparent scale of activity during the Nov 4–10 surge window. Figure 4 and the Reddit harm proxy daily table support the exploratory RQ3 analysis by showing day-to-day variation in harm-flagged language rates across the study window and during shared surge days.
+
+
