@@ -69,4 +69,53 @@ This result is important for interpreting the project's main findings because it
 
 Twitter appears in the window totals with candidate counts only (34,886) because the Twitter keyword sample in the tidy index lacks usable day-level timestamps. This limitation prevents a clean, daily comparison of Twitter candidates vs. keywords in the current workflow and is carried forward into the project's limitations and next steps.
 
+# Analysis 2B: Preliminary Harm Proxy on Reddit (RQ3, Exploratory)
+To address RQ3 (exploratory), I use a lightweight text-based harm proxy on Reddit content to examine whether days with strong election-related surges correspond with changes in rates of harm-flagged language. Reddit is used here because text is available in a form that can be analyzed directly within the current workflow, and Reddit also had valid day-level coverage in Analysis 1.
 
+The proxy is computed by creating a text field for screening, flagging comments that match a predefined set of harm-related terms/patterns, and then aggregating daily totals into three measures: total_comments, harm_comments, and harm_rate (harm-flagged comments divided by total comments). I then compare these daily values across the full available period and focus on the election-week surge window and shared surge dates from Analysis 1.
+
+| index | day | total_comments | harm_comments | harm_rate |
+|---:|---|---:|---:|---:|
+| 0 | 2022-10-01 | 54 | 4 | 0.074074 |
+| 1 | 2022-10-02 | 49 | 3 | 0.061224 |
+| 2 | 2022-10-03 | 79 | 5 | 0.063291 |
+| 3 | 2022-10-04 | 80 | 9 | 0.112500 |
+| 4 | 2022-10-05 | 87 | 1 | 0.011494 |
+| 5 | 2022-10-06 | 85 | 3 | 0.035294 |
+| 6 | 2022-10-07 | 75 | 3 | 0.040000 |
+| 7 | 2022-10-08 | 82 | 3 | 0.036585 |
+| 8 | 2022-10-09 | 57 | 3 | 0.052632 |
+| 9 | 2022-10-10 | 92 | 5 | 0.054348 |
+
+| index | day | total_comments | harm_comments | harm_rate |
+|---:|---|---:|---:|---:|
+| 76 | 2022-12-16 | 282 | 28 | 0.099291 |
+| 77 | 2022-12-17 | 280 | 23 | 0.082143 |
+| 78 | 2022-12-18 | 300 | 32 | 0.106667 |
+| 79 | 2022-12-19 | 304 | 25 | 0.082237 |
+| 80 | 2022-12-20 | 324 | 27 | 0.083333 |
+| 81 | 2022-12-21 | 294 | 27 | 0.091837 |
+| 82 | 2022-12-22 | 355 | 29 | 0.081690 |
+| 83 | 2022-12-23 | 299 | 23 | 0.076923 |
+| 84 | 2022-12-24 | 292 | 28 | 0.095890 |
+| 85 | 2022-12-25 | 275 | 18 | 0.065455 |
+
+| index | day | total_comments | harm_comments | harm_rate |
+|---:|---|---:|---:|---:|
+| 34 | 2022-11-04 | 4026 | 290 | 0.072032 |
+| 37 | 2022-11-07 | 6551 | 354 | 0.054038 |
+| 38 | 2022-11-08 | 12258 | 545 | 0.044461 |
+| 39 | 2022-11-09 | 19804 | 726 | 0.036659 |
+| 40 | 2022-11-10 | 10712 | 474 | 0.044249 |
+
+<img width="1189" height="590" alt="image" src="https://github.com/user-attachments/assets/18abcf13-294b-470f-95c1-6246020b048d" />
+
+|index|day|total\_comments|harm\_comments|harm\_rate|
+|---|---|---|---|---|
+|34|2022-11-04 00:00:00|4026|290|0\.07203179334326876|
+|35|2022-11-05 00:00:00|3186|219|0\.0687382297551789|
+|36|2022-11-06 00:00:00|3409|232|0\.06805514813728367|
+|37|2022-11-07 00:00:00|6551|354|0\.05403755151885208|
+|38|2022-11-08 00:00:00|12258|545|0\.044460760319791154|
+|39|2022-11-09 00:00:00|19804|726|0\.03665926075540295|
+|40|2022-11-10 00:00:00|10712|474|0\.04424943988050784|
